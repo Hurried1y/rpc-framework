@@ -1,0 +1,11 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: order-demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/rpc_demo?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver

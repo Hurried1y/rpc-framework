@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "rpc",
+      "type": "com.hurried1y.simple.properties.RpcServerProperties",
+      "sourceType": "com.hurried1y.simple.properties.RpcServerProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

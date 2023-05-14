@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.hurried1y</groupId>
+    <artifactId>rpc-demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>common-demo</module>
+        <module>order-demo</module>
+        <module>user-demo</module>
+        <module>interface-demo</module>
+        <module>rpc-framework-simple</module>
+        <module>rpc-framework-common</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.6.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <lombok.version>1.18.26</lombok.version>
+        <junit.version>4.12</junit.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <dubbo.version>3.2.0-beta.6</dubbo.version>
+        <curator.version>5.3.0</curator.version>
+        <mysql.version>8.0.13</mysql.version>
+        <mybatisplus.version>3.4.3</mybatisplus.version>
+        <!--====================rpc-framework=======================-->
+        <netty.version>4.1.42.Final</netty.version>
+        <kryo.version>4.0.2</kryo.version>
+        <guava.version>30.1.1-jre</guava.version>
+        <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
+        <curator-version>4.2.0</curator-version>
+        <!-- test -->
+        <junit.jupiter.version>5.5.2</junit.jupiter.version>
+        <junit.platform.version>1.5.2</junit.platform.version>
+        <!--logging-->
+        <slf4j.version>1.7.25</slf4j.version>
+        <!-- protostuff -->
+        <protostuff.version>1.7.2</protostuff.version>
+        <!--hessian-->
+        <hessian.version>4.0.65</hessian.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!-- mysql驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!--===================rpc-framework=====================-->
+            <!-- guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!-- test -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-runner</artifactId>
+                <version>${junit.platform.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatisplus.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

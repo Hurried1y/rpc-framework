@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mapper接口的全类名要和映射文件的namespace一致-->
+<mapper namespace="com.hurried1y.mapper.OrderMapper">
+    <insert id="save">
+        insert into `order` (order_sn, user_id, produect_name)
+        values (#{orderSn}, #{userId}, #{produectName})
+    </insert>
+
+    <select id="getOrderByOrderSn" resultType="com.hurried1y.entity.Order">
+        select * from `order` where order_sn = #{orderSn}
+    </select>
+</mapper>

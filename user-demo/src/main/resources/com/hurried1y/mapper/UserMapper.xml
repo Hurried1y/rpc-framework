@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mapper接口的全类名要和映射文件的namespace一致-->
+<mapper namespace="com.hurried1y.mapper.UserMapper">
+
+    <select id="getInfo" resultType="com.hurried1y.entity.User">
+        select * from user where id = #{userId}
+    </select>
+</mapper>

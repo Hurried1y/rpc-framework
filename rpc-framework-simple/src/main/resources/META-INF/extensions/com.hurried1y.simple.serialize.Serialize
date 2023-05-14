@@ -1,0 +1,3 @@
+kyro=com.hurried1y.simple.serialize.kyro.KryoSerializer
+protostuff=ProtostuffSerializer
+hessian=HessianSerializer
