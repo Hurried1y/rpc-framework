@@ -15,8 +15,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * Date：2023/4/20
  */
 public class CommonClientCache {
-
-
     public static ClientConfig CLIENT_CONFIG;
     //@Reference -> provider名称 --> 该服务有哪些集群URL
     public static List<URL> SUBSCRIBE_SERVICE_LIST = new ArrayList<>();
